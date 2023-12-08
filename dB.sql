@@ -1,12 +1,12 @@
 -- Create Database
-CREATE DATABASE SampleDB;
+CREATE DATABASE IF NOT EXISTS SampleDB;
 
 -- Use Database
 USE SampleDB;
 
 -- Create Users Table
 CREATE TABLE Users (
-    UserID INT PRIMARY KEY,
+    UserID INT AUTO_INCREMENT PRIMARY KEY,
     FirstName VARCHAR(50),
     LastName VARCHAR(50),
     Age INT
@@ -15,9 +15,9 @@ CREATE TABLE Users (
 -- Insert Data
 INSERT INTO Users (UserID, FirstName, LastName, Age)
 VALUES
-    (1, 'John', 'Doe', 25),
-    (2, 'Jane', 'Smith', 30),
-    (3, 'Bob', 'Johnson', 22);
+    ('John', 'Doe', 25),
+    ('Jane', 'Smith', 30),
+    ('Bob', 'Johnson', 22);
 
 -- Select Data
 SELECT * FROM Users;
@@ -46,9 +46,9 @@ SELECT * FROM Users WHERE LastName LIKE 'D%';
 -- IN Operator
 SELECT * FROM Users WHERE Age IN (25, 30);
 
--- Null Values
+-- using Null Values
 INSERT INTO Users (UserID, FirstName, LastName, Age)
-VALUES (4, 'Alice', NULL, 28);
+VALUES ('Alice', NULL, 28);
 
 -- Aliases
 SELECT FirstName AS First, LastName AS Last FROM Users;
@@ -67,3 +67,4 @@ VALUES (101, 1, 'Laptop'), (102, 2, 'Phone');
 SELECT Users.FirstName, Users.LastName, Orders.Product
 FROM Users
 JOIN Orders ON Users.UserID = Orders.UserID;
+--
