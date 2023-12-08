@@ -48,6 +48,4 @@
     - IN Operator: Tests whether a value matches any value in a list.
     - Aliases: Provides a temporary name for a table or column.
     - JOIN: Combines rows from two or more tables based on a related column.
-    - Stored Procedure: A precompiled collection of one or more SQL statements.
-
-.....
+    - Stored Procedure: A precompiled collection of one or more SQL statements...
