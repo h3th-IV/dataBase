@@ -1,19 +1,18 @@
 # SQL and Relational Databases Concepts
 
 - [X] SQL (Structured Query Language)
-SQL is a domain-specific language used for managing and manipulating relational databases.
+    - SQL is a domain-specific language used for managing and manipulating relational databases.
 
 - [X] RDBMS (Relational Database Management System)
-RDBMS is a type of database management system that organizes data into tables with relationships.
+    - RDBMS is a type of database management system that organizes data into tables with relationships.
 
 - [X] Table
-A table is a structured set of data elements organized in columns and rows.
+    - A table is a structured set of data elements organized in columns and rows.
 
 - [X] Field, Column
-    A field (or column) represents a single attribute of a record in a table.
-
-- [X] Rows, Record
-    A row (or record) is a set of field values representing a single data entity in a table.
+    - A field (or column) represents a single attribute of a record in a table.
+    - Rows, Record
+    - A row (or record) is a set of field values representing a single data entity in a table.
 
 - [X] SQL Commands
     - SELECT: Retrieves data from one or more tables.
